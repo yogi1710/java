@@ -29,9 +29,16 @@ public class ObjectArray {
         stu[0] = s1;
         stu[1] = s2;
         stu[2] = s3;
-        for(int i = 0;i<stu.length;i++){
-            System.out.println("Roll Number"+" "+ stu[i].roll_no);
-            System.out.println(stu[i].name +": "+ stu[i].marks);
+        // for(int i = 0;i<stu.length;i++){
+        //     System.out.println("Roll Number"+" "+ stu[i].roll_no);
+        //     System.out.println(stu[i].name +": "+ stu[i].marks);
+        //     System.out.println();
+        // }
+
+        // Using for each loop or Enhance for loop
+        for(Student var : stu){
+            System.out.println("Roll Number : "+var.roll_no);
+            System.out.println(var.name+": "+var.marks);
             System.out.println();
         }
     }
