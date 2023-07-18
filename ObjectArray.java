@@ -7,6 +7,7 @@ class Student{
 // We are creating the array of type student
 // actually to create a array fo type int, we use - int variable[] = new int[3];
 // Similarly to create a array of type student we use - student variable[] = new student[4]
+
 public class ObjectArray {
     public static void main(String[] args) {
         Student s1 = new Student();
