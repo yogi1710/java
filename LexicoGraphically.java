@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class SubString {
+public class LexicoGraphically {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String variable = sc.nextLine();

@@ -24,4 +24,7 @@ public class Anagrams {
             System.out.println("Not Anagrams");
         }
     }
+
+    // Method 2 using index values ,here we take str1's values and remove them from str2 ,finally str2 should be empty then it is said as anagrams
+    
 }
