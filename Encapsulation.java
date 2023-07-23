@@ -39,6 +39,29 @@ class Human2{
         return name;
     }
 }
+
+class Human3{
+    private int age;
+    private String name;
+    // create getter and setter by using vscode,right click on the screen ,click on sorce actoin and select genereate getter and setter methods
+    // This will automatically creates the methods for the selected variables
+    // The below methods are created by using the vscode
+    public int getAge() {
+        return age;
+    }
+    public void setAge(int age) { //here age is local varible 
+        this.age = age;
+        // this keyword is used when the local and instance variables are same
+    }
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    
+}
 class Encapsulation{
     public static void main(String[] args) {
         // We can't call the age varible by using the object 
@@ -56,6 +79,16 @@ class Encapsulation{
         obj2.setString("hari");
         System.out.println(obj2.getAge());
         System.out.println(obj2.getName());
+
+
+        Human3 obj3 = new Human3();
+        // Here the age and name are not assigned ,so we need to call the setAge and setName methods and pass the values as arguments
+        obj3.setAge(21);
+        // We are giving the value to the age variable which is private,by calling the method from the main class 
+        obj3.setName("Jack");
+        System.out.println(obj3.getAge());
+        System.out.println(obj3.getName());
+
 
     }
 }
